@@ -10,4 +10,12 @@ export default defineConfig({
   adapter: node({
     mode: "standalone",
   }),
+  security: {
+    allowedDomains: [
+      {
+        hostname: "*.kuhmachtmuh.de",
+        protocol: "https",
+      },
+    ],
+  },
 });
